@@ -1,0 +1,11 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Contest Betting App - A Progressive Web App"><meta name="theme-color" content="#000000"><link rel="manifest" href="manifest.json"><link rel="apple-touch-icon" href="icon-192x192.png"><title>Contest Betting App</title><script defer="defer" src="/contest/bundle.714aa1df2a5d525270ff.js"></script></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div><script>if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/contest/sw.js')
+                    .then(registration => {
+                        console.log('SW registered:', registration);
+                    })
+                    .catch(error => {
+                        console.log('SW registration failed:', error);
+                    });
+            });
+        }</script></body></html>
